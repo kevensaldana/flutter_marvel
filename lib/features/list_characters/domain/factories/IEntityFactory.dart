@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_marvel/core/domain/entities/Character.dart';
+import 'package:flutter_marvel/features/list_characters/domain/entities/Character.dart';
 
 abstract class IEntityFactory {
   Character newCharacter({

@@ -1,5 +1,5 @@
-import 'package:flutter_marvel/core/domain/entities/Character.dart';
-import 'package:flutter_marvel/core/domain/factories/IEntityFactory.dart';
+import 'package:flutter_marvel/features/list_characters/domain/entities/Character.dart';
+import 'package:flutter_marvel/features/list_characters/domain/factories/IEntityFactory.dart';
 
 class EntityFactory implements IEntityFactory {
   @override
