@@ -1,4 +1,4 @@
-import 'package:flutter_marvel/features/list_characters/presentation/models/Character.dart';
+import 'package:flutter_marvel/features/list_characters/domain/entities/character.dart';
 
 class ListCharacter {
   int count;

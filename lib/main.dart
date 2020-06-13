@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_marvel/FlutterMarvelUiComposer.dart';
+import 'package:flutter_marvel/flutter_marvel_ui_composer.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  FlutterMarvelUiComposer.configure();
   runApp(MyApp());
 }
 

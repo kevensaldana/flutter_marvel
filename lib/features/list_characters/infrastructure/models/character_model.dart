@@ -1,5 +1,5 @@
 
-import 'package:flutter_marvel/features/list_characters/domain/entities/Character.dart';
+import 'package:flutter_marvel/features/list_characters/domain/entities/character.dart';
 import 'package:meta/meta.dart';
 
 class CharacterModel extends Character{

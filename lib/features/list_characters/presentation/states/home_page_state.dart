@@ -1,4 +1,4 @@
-import 'package:flutter_marvel/features/list_characters/presentation/models/ListCharacter.dart';
+import 'package:flutter_marvel/features/list_characters/presentation/models/list_character.dart';
 
 class HomePageState {}
 

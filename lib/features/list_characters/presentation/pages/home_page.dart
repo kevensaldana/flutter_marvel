@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_marvel/features/list_characters/presentation/states/home_page_bloc.dart';
 
@@ -14,6 +16,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
+    widget.bloc.stateList.listen((event) {
+      debugPrint(event.toString());
+    });
     super.initState();
   }
 

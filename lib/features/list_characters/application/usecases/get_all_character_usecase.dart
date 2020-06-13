@@ -1,6 +1,6 @@
 
-import 'package:flutter_marvel/features/list_characters/domain/entities/ListCharacter.dart';
-import 'package:flutter_marvel/features/list_characters/domain/repositories/ICharacterRepository.dart';
+import 'package:flutter_marvel/features/list_characters/domain/entities/list_character.dart';
+import 'package:flutter_marvel/features/list_characters/domain/repositories/i_character_repository.dart';
 
 class GetAllCharacterUseCase {
   final ICharacterRepository _characterRepository;

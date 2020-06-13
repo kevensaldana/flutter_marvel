@@ -1,5 +1,5 @@
 import 'package:flutter_marvel/features/list_characters/presentation/states/home_page_state.dart';
-import 'package:flutter_marvel/features/list_characters/presentation/viewmodels/HomePageViewModel.dart';
+import 'package:flutter_marvel/features/list_characters/presentation/viewmodels/home_page_view_model.dart';
 
 class HomePageBloc {
   final Stream<HomePageState> stateList;
@@ -17,6 +17,7 @@ class HomePageBloc {
       await viewModel.list();
       yield HomePagePopulated(viewModel.listCharacter);
     } catch (e) {
+      print(e);
       yield HomePageError();
     }
   }
