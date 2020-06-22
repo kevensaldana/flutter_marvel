@@ -14,7 +14,7 @@ class ColorsApp {
   static final textSecondary = fromHex('#9E9E9E');
   static final textPrimary = fromHex('#e1e2e2');
   static final background = ColorsApp.z0;
-  
+
   static Color fromHex(String hexColor) {
     final hexCode = hexColor.replaceAll('#', '');
     return Color(int.parse('FF$hexCode', radix: 16));

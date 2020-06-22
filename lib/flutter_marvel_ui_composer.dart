@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 import 'features/list_characters/presentation/states/home_page_bloc.dart';
 import 'features/list_characters/presentation/viewmodels/home_page_view_model.dart';
 
-class FlutterMarvelUiComposer{
+class FlutterMarvelUiComposer {
   static RemoteCharacterDataSource _datasource;
   static ICharacterRepository _characterRepository;
 
@@ -19,10 +19,14 @@ class FlutterMarvelUiComposer{
   }
 
   static Widget composeHomePage() {
-    GetAllCharacterUseCase getAllCharacterUseCase = GetAllCharacterUseCase(characterRepository: _characterRepository);
-    HomePageViewModel homePageViewModel = HomePageViewModel(getAllCharacterUseCase: getAllCharacterUseCase);
+    GetAllCharacterUseCase getAllCharacterUseCase =
+        GetAllCharacterUseCase(characterRepository: _characterRepository);
+    HomePageViewModel homePageViewModel =
+        HomePageViewModel(getAllCharacterUseCase: getAllCharacterUseCase);
     HomePageBloc homePageBloc = HomePageBloc(homePageViewModel);
-    return HomePage(title: 'Flutter Characters', bloc: homePageBloc,);
+    return HomePage(
+      title: 'Flutter Characters',
+      bloc: homePageBloc,
+    );
   }
-
 }

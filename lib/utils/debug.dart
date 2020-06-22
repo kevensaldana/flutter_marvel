@@ -22,20 +22,24 @@ class Console {
   static v(var input) {
     logLib.v(input);
   }
+
   static log(var input) {
     logLib.d(input);
   }
+
   static i(var input) {
     logLib.i(input);
   }
+
   static w(var input) {
     logLib.w(input);
   }
+
   static e(var input) {
     logLib.e(input);
   }
+
   static wtf(var input) {
     logLib.wtf(input);
   }
 }
-

@@ -61,7 +61,8 @@ class _HomePageState extends State<HomePage> {
       return SliverToBoxAdapter(
         child: SizedBox(
           child: Center(
-            child: Text('Cargando', style: TextStyle(color: ColorsApp.textPrimary, fontSize: 30)),
+            child: Text('Cargando',
+                style: TextStyle(color: ColorsApp.textPrimary, fontSize: 30)),
           ),
         ),
       );
@@ -70,15 +71,16 @@ class _HomePageState extends State<HomePage> {
         child: SizedBox(
           height: 1000,
           child: Center(
-            child: Text('Hubo un error', style: TextStyle(color: ColorsApp.textPrimary, fontSize: 30)),
+            child: Text('Hubo un error',
+                style: TextStyle(color: ColorsApp.textPrimary, fontSize: 30)),
           ),
         ),
       );
     } else if (state is HomePagePopulated) {
       final list = state.result.result;
       return SliverGrid(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 300,
         ),
         delegate: SliverChildBuilderDelegate(
           (context, index) => Container(

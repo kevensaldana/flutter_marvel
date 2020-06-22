@@ -17,11 +17,13 @@ class HomePageViewModel {
     _listCharacter = ListCharacter(
         count: result.count,
         limit: result.limit,
-        result: result.result.map((e) => Character(
-            name: e.name,
-            id: e.id,
-            description: e.description,
-            image: e.image)).toList(),
+        result: result.result
+            .map((e) => Character(
+                name: e.name,
+                id: e.id,
+                description: e.description,
+                image: e.image))
+            .toList(),
         total: result.total);
   }
 }
