@@ -32,18 +32,17 @@ class _HomePageState extends State<HomePage> {
             body: CustomScrollView(
               slivers: <Widget>[
                 SliverAppBar(
-                  expandedHeight: 100.0,
-                  floating: true,
+                  expandedHeight: 120.0,
+                  floating: false,
                   pinned: true,
-                  snap: true,
                   elevation: 50,
-                  backgroundColor: ColorsApp.accent,
+                  backgroundColor: ColorsApp.primary,
                   flexibleSpace: FlexibleSpaceBar(
                       centerTitle: true,
                       title: Text('Characters',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           )),
                       background: Container(
                         color: ColorsApp.background,
