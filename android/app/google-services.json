@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "910361033064",
+    "firebase_url": "https://angular-keven-template.firebaseio.com",
+    "project_id": "angular-keven-template",
+    "storage_bucket": "angular-keven-template.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910361033064:android:a214256b4f0c4c495a7edd",
+        "android_client_info": {
+          "package_name": "com.kevensaldana.flutter_marvel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910361033064-k59v97mq7d47pfp1hqsoane82npen2pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChSXXo20gKIRtWYOOKwS-qkKIF6832_IU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910361033064-k59v97mq7d47pfp1hqsoane82npen2pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

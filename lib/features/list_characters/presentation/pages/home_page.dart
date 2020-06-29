@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         stream: widget.bloc.stateList,
         builder: (BuildContext context, AsyncSnapshot<HomePageState> snapshot) {
           final state = snapshot.data;
-
+          int year = new DateTime.now().year;
           return Scaffold(
             backgroundColor: ColorsApp.background,
             body: CustomScrollView(
@@ -47,6 +47,16 @@ class _HomePageState extends State<HomePage> {
                       background: Container(
                         color: ColorsApp.background,
                       )),
+                ),
+                SliverToBoxAdapter(
+                  child: Container(
+                    margin: const EdgeInsets.only(bottom: 20.0),
+                    child: Center(
+                      child: Text('Data provided by Marvel. © $year Marvel',
+                          style: TextStyle(
+                              color: ColorsApp.textPrimary, fontSize: 20)),
+                    ),
+                  ),
                 ),
                 _buildChild(state)
               ],
