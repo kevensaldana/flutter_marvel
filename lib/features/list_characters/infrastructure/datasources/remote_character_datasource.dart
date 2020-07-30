@@ -12,7 +12,7 @@ class RemoteCharacterDataSource implements ICharacterDatasource {
 
   @override
   Future<ListCharacterModel> list(int limit, int offset) =>
-      _getFromUrl('https://angular.kevensaldana.com/api/list-characters');
+      _getFromUrl('https://api-marvel.kevensaldana.com/character');
 
   Future<ListCharacterModel> _getFromUrl(String url) async {
     final response = await client.get(url);
